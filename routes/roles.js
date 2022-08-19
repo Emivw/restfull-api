@@ -1,8 +1,8 @@
-https://luna-rose.herokuapp.com/const express = require('express');
+const express = require('express');
 const router = express.Router();
-const User = require('../models').User;
-const Role = require('../models').Role;
-const Permission = require('../models').Permission;
+const User = require('../models/user').User;
+const Role = require('../models/role').Role;
+const Permission = require('../models/permission').Permission;
 const passport = require('passport');
 require('../config/passport')(passport);
 const Helper = require('../utils/helper');

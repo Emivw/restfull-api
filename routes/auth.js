@@ -3,8 +3,8 @@ const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const router = express.Router();
 require('../config/passport')(passport);
-const User = require('../models').User;
-const Role = require('../models').Role;
+const User = require('../models/user').User;
+const Role = require('../models/role').Role;
 
 router.post('/signup', function (req, res) {
     if (!req.body.email || !req.body.password || !req.body.fullname) {

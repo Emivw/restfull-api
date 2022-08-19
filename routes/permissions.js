@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Permission = require('../models').Permission;
+const Permission = require('../models/permission').Permission;
 const passport = require('passport');
 require('../config/passport')(passport);
 const Helper = require('../utils/helper');

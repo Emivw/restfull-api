@@ -1,8 +1,10 @@
-const RolePermission = require('../models').RolePermission;
-const Permission = require('../models').Permission;
+const RolePermission = require('../models/rolepermission').RolePermission;
+const Permission = require('../models/permission').Permission;
 
 class Helper {
-    constructor() {}
+    function_constructor() {
+        this.checkPermission = Permission
+    }
 
     checkPermission(roleId, permName) {
         return new Promise(
